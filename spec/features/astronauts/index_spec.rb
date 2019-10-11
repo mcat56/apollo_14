@@ -13,12 +13,12 @@ describe 'As a visitor' do
 
     neil_1 = AstronautMission.create!(mission_id: mission_1.id, astronaut_id: @neil_arm.id)
     neil_2 = AstronautMission.create!(mission_id: mission_2.id, astronaut_id: @neil_arm.id)
-    sally_1 = AstronautMission.create!(mission_id: mission_1.id, astronaut_id: @neil_arm.id)
-    sally_2 = AstronautMission.create!(mission_id: mission_3.id, astronaut_id: @neil_arm.id)
-    alan_1 = AstronautMission.create!(mission_id: mission_2.id, astronaut_id: @neil_arm.id)
-    alan_2 = AstronautMission.create!(mission_id: mission_1.id, astronaut_id: @neil_arm.id)
-    pete_1 =AstronautMission.create!(mission_id: mission_3.id, astronaut_id: @neil_arm.id)
-    pete_2 = AstronautMission.create!(mission_id: mission_1.id,astronaut_id: @neil_arm.id)
+    sally_1 = AstronautMission.create!(mission_id: mission_1.id, astronaut_id: @sally_ride.id)
+    sally_2 = AstronautMission.create!(mission_id: mission_3.id, astronaut_id: @sally_ride.id)
+    alan_1 = AstronautMission.create!(mission_id: mission_2.id, astronaut_id: @alan_shepard.id)
+    alan_2 = AstronautMission.create!(mission_id: mission_1.id, astronaut_id: @alan_shepard.id)
+    pete_1 =AstronautMission.create!(mission_id: mission_3.id, astronaut_id: @pete_con.id)
+    pete_2 = AstronautMission.create!(mission_id: mission_1.id,astronaut_id: @pete_con.id)
 
   end
   it 'I see all astronauts and their information on the index page' do

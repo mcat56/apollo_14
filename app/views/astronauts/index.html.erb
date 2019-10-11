@@ -5,12 +5,12 @@
     <h2><%= astronaut.name %></h2>
     <p> <%= astronaut.age %> </p>
     <p> <%= astronaut.job %> </p>
-    <%  binding.pry %>
-    <% astronaut.missions.each do |mission| %>
+    <h3>Missions:</h3>
+    <% astronaut.ast_missions.each do |mission| %>
     <p>  <%= mission.title %>  </p>
     <% end  %>
     <br />
   </section>
 <% end %>
 
-<p>Astronaut Age: <%= @astronauts.average_age.round  %>
+<p>Average Astronaut Age: <%= @astronauts.average_age.round  %>
