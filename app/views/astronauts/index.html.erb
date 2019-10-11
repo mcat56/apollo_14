@@ -3,9 +3,9 @@
 <% @astronauts.each do |astronaut| %>
   <section id="astronaut-<%= astronaut.id %>">
     <h2><%= astronaut.name %></h2>
-    <p> <%= astronaut.age %> </p>
-    <p> <%= astronaut.job %> </p>
-    <p> <%= astronaut.total_space_time %> </p>
+    <p>Age: <%= astronaut.age %> </p>
+    <p>Job: <%= astronaut.job %> </p>
+    <p>Total Space Time: <%= astronaut.total_space_time %> days </p>
     <h3>Missions:</h3>
     <% astronaut.ast_missions.each do |mission| %>
     <p>  <%= mission.title %>  </p>
