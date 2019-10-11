@@ -23,4 +23,8 @@ describe Astronaut, type: :model do
     end
   end
 
+  describe 'class methods' do
+
+  end
+
 end

@@ -49,7 +49,7 @@ describe 'As a visitor' do
     visit 'astronauts'
     save_and_open_page
 
-    expect(page).to have_content(41)
+    expect(page).to have_content('Average Astronaut Age: 41')
   end
 
 end
